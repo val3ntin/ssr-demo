@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "next",
+    "next-build": "next build",
+    "next-start": "next start",
     "start": "webpack-dev-server --open",
     "build": "webpack --color --mode=development",
     "build-prod": "webpack --mode=production",
@@ -28,6 +31,7 @@
     "@babel/runtime": "^7.5.5",
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
+    "next": "^9.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
