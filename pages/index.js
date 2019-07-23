@@ -13,9 +13,7 @@ const StyledPage = styled.div`;
 
 const Page = ({ initialData }) => {
     return <StyledPage>
-        <Header />
         <Content users={initialData.users} />
-        <Footer />
     </StyledPage>
 };
 
