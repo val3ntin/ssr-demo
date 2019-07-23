@@ -1,0 +1,1 @@
+export const getUsers = () => fetch('https://randomuser.me/api/?results=40').then(res => res.json()).then(data => data.results);
