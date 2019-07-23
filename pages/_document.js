@@ -11,7 +11,8 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
+        <title> > next js app</title>
         <Head />
         <body>
           <Header />
