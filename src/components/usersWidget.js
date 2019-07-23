@@ -28,8 +28,8 @@ const generatePlaceHolders = number => {
 
     return arr;
 }
-export default () => {
-    const [users, setUsers] = useState([])
+export default ({users: data}) => {
+    const [users, setUsers] = useState(data)
 
     const fetchUsers = async () => {
         const users = await getUsers();
@@ -42,8 +42,6 @@ export default () => {
 
     return (
         <StyledUsersWidget>
-            {/* // 2 */}
-            {users.length === 0 && generatePlaceHolders(50).map(u => <UserCard {...u} key={u.cell} />)}
             {users.map(u => <UserCard {...u} key={u.cell} />)}
         </StyledUsersWidget>
     )

@@ -11,8 +11,8 @@ const StyledContent = styled.section`
     width: 100%;
 `
 
-export default () => (
+export default ({users}) => (
     <StyledContent>
-        <UsersWidget />
+        <UsersWidget users={users}/>
     </StyledContent>
 )
