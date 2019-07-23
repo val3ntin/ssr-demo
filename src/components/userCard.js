@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
-import { white, navyBlue, yongerBlue, spaceCadet, cornflowerBlue } from '../utils/colors';
+import { white, navyBlue, spaceCadet, cornflowerBlue } from '../utils/colors';
 
 const StyledUser = styled.div`
     display: flex;

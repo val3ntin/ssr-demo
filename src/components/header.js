@@ -10,6 +10,8 @@ const StyledHeader = styled.header`
     width: 100%;
     flex-grow: 0;
     flex-shrink: 0;
+    font-size: 16px;
+    text-align: center;
 
 `
 

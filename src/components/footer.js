@@ -9,6 +9,8 @@ const StyledFooter = styled.footer`
     background-color: ${spaceCadet};
     color: ${white};
     width: 100%;
+    font-size: 16px;
+    text-align: center;
 `
 export default () => (
     <StyledFooter>

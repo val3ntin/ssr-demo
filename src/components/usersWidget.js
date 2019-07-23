@@ -11,23 +11,6 @@ const StyledUsersWidget = styled.div`
     background-color: ${spaceCadet};
 `;
 
-const emptyUser = {
-    name: {},
-    cell: '',
-}
-
-// 2
-const generatePlaceHolders = number => {
-    let arr = [];
-    while (arr.length <= number) {
-        arr.push({
-            ...emptyUser,
-            cell: arr.length
-        });
-    }
-
-    return arr;
-}
 export default () => {
     const [users, setUsers] = useState([])
 
@@ -42,8 +25,6 @@ export default () => {
 
     return (
         <StyledUsersWidget>
-            {/* // 2 */}
-            {users.length === 0 && generatePlaceHolders(50).map(u => <UserCard {...u} key={u.cell} />)}
             {users.map(u => <UserCard {...u} key={u.cell} />)}
         </StyledUsersWidget>
     )
